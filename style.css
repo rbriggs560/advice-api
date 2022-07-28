@@ -1,0 +1,92 @@
+:root{
+    --lightCyan:hsl(193, 38%, 86%);
+    --neonGreen:hsl(150, 100%, 66%);
+    --grayishBlue:hsl(217, 19%, 38%);
+    --darkBlue:hsl(218, 23%, 16%);
+    --darkGrayishBlue: hsl(217, 19%, 24%);
+    --quote-font-size:1.75rem;
+
+}
+
+body{
+    background-color: var(--darkBlue);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+
+}
+
+.Container{
+    background-color: var(--darkGrayishBlue);
+    font-size: 11px;
+    text-align: center;
+    border-radius: .75rem;
+    margin: 0 auto;
+    width: fit-content;
+    margin-top: 20rem;
+}
+
+.main{
+    padding: 1rem;
+    padding-bottom: 0;
+    min-width:31.22rem;
+}
+
+.grid-div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+}
+
+
+/* STYLING THE QUOTE ID */
+.num-quote{
+    color:var(--neonGreen);
+    text-transform: uppercase;
+}
+
+/* STYLING THE QUOTE */
+.quote{
+   
+    color:var(--lightCyan);
+    font-size: 1.75rem;
+    font-weight: 800;
+}
+
+/* STYLING THE DICE BUTTON */
+.dice-div{
+    position: relative;
+    z-index: 2;
+    bottom: -25px;
+}
+
+.dice-button{
+    background-color: var(--neonGreen);
+    border-radius:4rem;
+    border-style: none;
+    padding:1rem
+}
+
+.dice-button:hover{
+    cursor: pointer;
+    box-shadow: var(--neonGreen) 0px 0px 30px 0px;
+    
+}
+
+.attribution{
+    margin: 0 auto;
+    width: 450px;
+    padding-top: 3rem;
+    color:white;
+}
+
+@media (min-width: 800px) {
+    .main {
+       max-width: 350px;
+        height:fit-content;
+    }
+
+    .Container{
+        min-width: 21.2rem;
+    }
+}
